@@ -1,0 +1,91 @@
+\documentclass[14pt]{beamer}
+
+  \usepackage[utf8]{inputenc}
+  \usepackage[ngerman]{babel}
+  \usepackage{eurosym}
+  
+  % Hochschule Emden/Leer Layout einbinden
+  \usepackage{hs-emden-theme}
+  
+  % Hochschule Emden/Leer Hintergrundbild einbinden
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{logo/hintergrund.eps}}
+  
+  % Für Grafiken
+  \usepackage{float}
+  \usepackage{graphicx}
+  
+  
+  % Nummerierung für die Gliederung aktivieren
+  \setbeamertemplate{section in toc}[sections numbered]
+  
+  % Dokumentinformationen
+  \author{
+    Frederick Lahde
+  }
+  \title[]{why docker is not a vm}
+  \subtitle{cgroups and namespaces}
+  \institute{Hochschule Emden/Leer}
+  \date{13.04.2018}
+  \subject{Recht und Datenschutz}
+  
+  \AtBeginSection[]{
+    \begin{frame}
+      \vfill
+      \centering
+      \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}\insertsectionhead\par%
+      \end{beamercolorbox}
+      \vfill
+    \end{frame}
+  }
+  
+  \begin{document}
+    % Titelslide
+    \begin{frame}[plain]
+      \maketitle
+      \centering
+      \begin{figure}[H]
+        %\includegraphics[width=0.3\linewidth]{logo/technik}
+      \end{figure}
+      \tiny{made with \LaTeX}
+    \end{frame}
+  
+    % Gliederung
+    \begin{frame}{Table of contents}
+      \setcounter{tocdepth}{1}
+      \tableofcontents
+    \end{frame}
+  
+
+    \section{foo}
+    \begin{frame}{Geschichte}
+      \begin{itemize}
+        \item 1973 UPC in den USA, 12 Stellen
+        \item EAN = UPC + eine führende Ziffer
+        \item 1977 Gründung der EAN International
+        \item 1. Januar 2005 Einführung der EAN in Nordamerika
+      \end{itemize}
+    \end{frame}
+    
+
+
+    % Fragen?
+    \begin{frame}
+      \vfill
+      \centering
+      \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}Noch Fragen?
+      \end{beamercolorbox}
+      \vfill
+    \end{frame}
+  
+    % Endfolie
+    \begin{frame}
+      \vfill
+      \centering
+      \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+        \usebeamerfont{title}Danke für die Aufmerksamkeit
+      \end{beamercolorbox}
+      \vfill
+    \end{frame}
+  \end{document}
